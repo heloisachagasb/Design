@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.img-perfume-computador{
+    height: 375px;
+    width: 250px;
+    border-radius: 7px 0 0 7px;
+}
+
+.img-perfume-celular{
+    display: none;
+}
+
+.info-perfume{
+    background-color: white;
+    height: 375px;
+    width: 250px;
+    border-radius: 0 7px 7px 0;
+    padding: 25px;
+}
+
+.sub-tit{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}    
+
+h1{
+    font-family: "Fraunces", serif;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.desc{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.price{
+    font-family: "Fraunces", serif;
+    font-weight: bolder;
+    font-size: 26px;
+    color:hsl(158, 36%, 37%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block
+}
+
+.old-price{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.container-price{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/*style pra telas de celulares*/
+@media screen and (max-width: 480px){
+    .img-perfume-computador{
+        display: none;
+    }
+
+    .container{
+        display: block;
+        margin-top: 90px;
+    }
+
+    .img-perfume-celular{
+        display: block;
+        height: 250px;
+        width: 90%;
+        margin: auto;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .info-perfume{
+        background-color: white;
+        height: auto;
+        width: 90%;
+        border-radius: 0 0 7px 7px;
+        padding: 25px;
+        margin: auto;
+    }
+
+    button{
+        width: 100%;
+        margin: auto;
+    }
+}
